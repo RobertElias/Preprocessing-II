@@ -3,17 +3,33 @@ header {
     
     .bordered(2px, grey);
     width: 100%;
-    margin: 20px 0;
-    padding: 20px 0;
+    // margin: 20px 0;
+    // padding: 20px 0;
     display: flex;
     justify-content: center;   
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: @main-color;
+    
+        @media @phone {
+          margin-bottom: 20px;
+        }
+      }// h1
 
     nav {
+
+        
       margin-top: 20px;
       width: 610px;
       justify-content: Flex-end;
       display: flex;
     
+     
 
       a {
         text-decoration: none;
@@ -22,7 +38,7 @@ header {
         display: flex;
         font-size: 2rem;
 
-      } // a
-    } //nav
+      } 
+    } 
  
-  }// header 
+  } 
