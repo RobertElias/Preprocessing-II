@@ -190,32 +190,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  border-bottom: 2px dashed grey;
-  width: 100%;
-  margin: 20px 0;
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
+.container nav a {
+  margin-left: 62px;
 }
 @media (max-width: 500px) {
-  header {
-    flex-direction: column;
-    align-items: center;
+  .container nav a {
+    margin-left: 0;
   }
 }
-header nav {
-  margin-top: 20px;
-  width: 610px;
-  justify-content: Flex-end;
-  display: flex;
-}
-header nav a {
+.container nav a a {
   text-decoration: none;
   margin-left: 20px;
-  color: black;
-  display: flex;
   font-size: 2rem;
+}
+.container nav a .first-anchor {
+  margin-left: 0;
 }
 .footer {
   width: 100%;

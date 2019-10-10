@@ -1,5 +1,30 @@
 .home {
- 
+
+  .navBar {
+    .bordered(2px, grey);
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1 {
+      border: 1px solid red;
+      font-size: 2rem;
+      color: @main-color;
+  
+      @media @phone {
+        margin-bottom: 20px;
+      }
+    }// h1
+  
+   
+  }// header
   
 
 

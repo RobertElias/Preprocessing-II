@@ -1,44 +1,19 @@
 // Navigation Styles here
-header {
+nav {
+    margin-left: 62px;
     
-    .bordered(2px, grey);
-    width: 100%;
-    // margin: 20px 0;
-    // padding: 20px 0;
-    display: flex;
-    justify-content: center;   
+
     @media @phone {
-        flex-direction: column;
-        align-items: center;
-      }
+      margin-left: 0;
+    }
 
-      h1 {
-        font-size: 2rem;
-        color: @main-color;
-    
-        @media @phone {
-          margin-bottom: 20px;
-        }
-      }// h1
+    a {
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 2rem;
+    }
 
-    nav {
-
-        
-      margin-top: 20px;
-      width: 610px;
-      justify-content: Flex-end;
-      display: flex;
-    
-     
-
-      a {
-        text-decoration: none;
-        margin-left: 20px;
-        color: black;
-        display: flex;
-        font-size: 2rem;
-
-      } 
-    } 
- 
-  } 
+    // .first-anchor {
+    //   margin-left: 0;
+    // }
+  }// nav
