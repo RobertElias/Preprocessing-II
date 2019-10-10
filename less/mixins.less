@@ -3,3 +3,43 @@
 .bordered(@width, @color){
     border-bottom:@width dashed @color;
   }
+
+  .custom-btn(@bg-color: lavendar, @width: 200px, @txt-color: purple){
+  display: block;
+  background-color: @bg-color;
+//   margin: 0 10px 20px;
+  cursor: pointer;
+  width: @width;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: @txt-color;
+
+//   &:hover{
+//     background-color:@txt-color;
+//     color:@bg-color;
+//     background-color: aqua;
+//     color: white;
+    
+//   }
+  
+  @media @phone {
+      width: 90%;
+      height: 40px;
+      font-size: 1.5rem;
+  }
+
+ 
+}
+.custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+  
+.btn{
+    .custom-layout(space-around, center);
+  }
+  .sign{
+    .custom-btn(@eastern-blue, 250px, white);
+  }
