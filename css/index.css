@@ -169,27 +169,30 @@ img {
   margin: 0 auto;
 }
 header {
+  border: 1px solid red;
+  border-bottom: 2px dashed grey;
   width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
   display: flex;
-  border-bottom: 2px dashed silver;
+  justify-content: space-between;
 }
 header nav {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 610px;
-  justify-content: space-between;
+  justify-content: Flex-end;
   display: flex;
 }
 header nav a {
   text-decoration: none;
+  margin-left: 20px;
   color: black;
+  display: flex;
+  font-size: 2rem;
 }
 header nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
-}
-header .logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
 }
 .footer {
   width: 100%;
