@@ -169,13 +169,12 @@ img {
   margin: 0 auto;
 }
 header {
-  border: 1px solid red;
   border-bottom: 2px dashed grey;
   width: 100%;
   margin: 20px 0;
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 header nav {
   margin-top: 20px;
