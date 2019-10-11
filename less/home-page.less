@@ -1,38 +1,79 @@
-.home {
-
- header {
+header {
   // border: 1px solid red;
   .bordered(2px, grey);
-  width: 100%;
-  margin: 20px 0;
+  width: auto;
+  margin: 20px 20px;
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+
+   @media @phone {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
 
   h1 {
-    font-size: rem;
-    color: @main-color;
+    font-size: 3rem;
+    // color: @main-color;
 
     @media @phone {
       margin-bottom: 20px;
     }
   }// h1
  }
-  
 
+.home {
 
-  .content-section {
-    margin: 30px 0;
+  .intro-section{
+    border-bottom: 2px dashed @navigation-border;
+  }
+  @media @phone {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin: 30px 0;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-   
+    border: 1px solid red;
+    .img-content{
+      width: 100%;
+      justify-content: center;
+      align-content: center;
+    }
+  
+  }//use this for main on project
+    .img-content{
+      width: 100%;
     
+    }
+
+    border-bottom: 2px dashed @navigation-border;
+    margin: 30px 0;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+
     .text-content {
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: auto;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        border: 1px solid red;
+
+        
+      
+      }//use this for main on project
       width: 48%;
       padding-right: 1%;
     }
+
+ 
 
     .img-content {
       width: 48%;
@@ -45,10 +86,37 @@
   }
 
   .inverse-content {
+    
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      width: auto;
+      margin: 30px 0;
+      flex-wrap: wrap;
+      border: 1px solid red;
+      .img-content{
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+      }
+    
+    }//use this for main on project
+
     .text-content {
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: auto;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        border: 1px solid red;
+      
+      }//use this for main on project
       padding-left: 1%;
       padding-right: 0;
     }
@@ -60,6 +128,18 @@
   }
 
   .content-destination {
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: auto;
+      margin: 30px 0;
+      flex-wrap: wrap;
+      border: 1px solid red;
+    
+    }//use this for main on project
+    
     width: 75%;
     margin: 0 auto 30px;
 
@@ -74,9 +154,31 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: auto;
+      // margin: 30px 0;
+      flex-wrap: wrap;
+      border: 1px solid red;
+    
+    }//use this for main on project
+    
+
     .destination {
       width: 35%;
       margin-bottom: 30px;
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: auto;
+        margin: 30px 0;
+        flex-wrap: wrap;
+        border: 1px solid red;
+      
+      }//use this for main on project
     }
   }
  
