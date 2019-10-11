@@ -1,30 +1,23 @@
 .home {
 
-  .navBar {
-    .bordered(2px, grey);
-    margin: 10px 0;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  
+ header {
+  // border: 1px solid red;
+  .bordered(2px, grey);
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-size: rem;
+    color: @main-color;
+
     @media @phone {
-      flex-direction: column;
-      align-items: center;
+      margin-bottom: 20px;
     }
-  
-    h1 {
-      border: 1px solid red;
-      font-size: 2rem;
-      color: @main-color;
-  
-      @media @phone {
-        margin-bottom: 20px;
-      }
-    }// h1
-  
-   
-  }// header
+  }// h1
+ }
   
 
 

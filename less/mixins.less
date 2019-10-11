@@ -15,28 +15,21 @@
   border-radius: 10px;
   color: @txt-color;
 
-//   &:hover{
-//     background-color:@txt-color;
-//     color:@bg-color;
-//     background-color: aqua;
-//     color: white;
-    
-//   }
-  
+
   @media @phone {
       width: 90%;
       height: 40px;
       font-size: 1.5rem;
   }
 
- 
+
 }
 .custom-layout(@justify, @align) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
   }
-  
+
 .btn{
     .custom-layout(space-around, center);
   }
